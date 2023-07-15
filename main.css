@@ -1,0 +1,90 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html {
+  font-family: 'Pretendard, -apple-system, Arial, sans-serif';
+}
+#container {
+  background-color: #455A64;
+  width: 1280px;
+  height: 2000px;
+  margin: 0 auto;
+}
+/* head */
+#head {
+  width: 1280px;
+  height: 200px;
+  background-color: #607D8B;
+  position: relative;
+  display: flex;
+}
+#head .logo {
+  width: 440px;
+  height: 200px;
+  background-color: blueviolet;
+  margin-left: 0px;
+}
+#head .nav {
+  width: 840px;
+  height: 200px;
+  margin-right: 0;
+  background-color: yellow;
+  position: relative;
+}
+#head .nav-icon {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+#head .nav-icon i {
+  font-size: 30px;
+  margin-left: 10px;
+}
+#head .nav-icon i:hover {
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#head .nav-menu {
+  height: 60px;
+  background-color: orange;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#head .nav-menu ul li {
+  display: inline-flex;
+  width: 120px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+#head .nav-menu ul li a{
+  text-decoration: none;
+  color: #212121;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* content */
+#content {
+  width: 1280px;
+  height: 1400px;
+  background-color: #CFD8DC;
+  display: flex;
+} 
+#content .article {
+  width: 1000px;
+  height: 1000px;
+  background-color: darkslateblue;
+}
+#content .side-menu {
+  width: 280px;
+  height: 1000px;
+  background-color: aquamarine;
+}
+
+#footer{
+  width: 1280px;
+  height: 400px;
+  background-color: royalblue;
+}
