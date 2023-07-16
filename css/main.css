@@ -1,5 +1,4 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('./font/goodTimesRg.otf');
 html {
   font-family: 'Pretendard, -apple-system, Arial, sans-serif, goodTimesRg';
   background-color: #CFD8DC;
@@ -7,16 +6,19 @@ html {
 #container {
   background-color: #455A64;
   width: 1280px;
-  height: 2000px;
+  height: 4000px;
   margin: 0 auto;
+  position: relative;
 }
 /* head */
 #head {
   width: 1280px;
   height: 100px;
-  background-color: #607D8B;
+  background-color: #bdd3dd;
+  background-image: linear-gradient(45deg, #bdd3dd, #CFD8DC);
   position: relative;
   display: flex;
+  border-bottom: 1px solid black;
 }
 #head .logo {
   width: 440px;
@@ -76,22 +78,71 @@ html {
 #content {
   width: 1280px;
   height: 1400px;
-  background-color: #CFD8DC;
   display: flex;
 } 
-#content .article {
-  width: 1000px;
+#content .about {
+  background-image: url("../img/laptopBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1280px;
   height: 1000px;
-  background-color: darkslateblue;
 }
-#content .side-menu {
-  width: 280px;
+#content .info {
+  text-align: right;
+  font-size: 40px;
+  font-weight: 500;
+  padding-right: 70px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#content .info:nth-child(1) {
+  margin-top: 200px;
+}
+#content .info:nth-child(2) {
+  margin-top: 50px;
+}
+#content .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin-top: 140px;
+}
+#content .skills .skills-title {
+  font-size: 45px;
+  padding: 0;
+  text-align: center;
+}
+#content .skills .skills-table {
+  display: flex;
+  justify-content: center;
+}
+#content .skills .skills-table .vertical-line {
+  height: 300px;
+  border-left: 1px solid;
+  margin: 0 10px 0 10px;
+}
+#content .skills .skills-table .frontEnd,
+#content .skills .skills-table .backEnd {
+  width: 400px;
+  height: 300px;
+  background-color: royalblue;
+}
+#content .demo {
+  width: 100%;
   height: 1000px;
-  background-color: aquamarine;
+  margin-top: 150px;
+  background-color: chocolate;
 }
-
+#content .study {
+  width: 100%;
+  height: 1000px;
+  margin-top: 100px;
+  background-color: chocolate;
+}
 #footer{
   width: 1280px;
   height: 400px;
   background-color: royalblue;
+  position: absolute;
+  bottom: 0;
 }
