@@ -1,4 +1,5 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 body {
   font-family: 'Pretendard, -apple-system, Arial, sans-serif, goodTimesRg';
   background-color: #CFD8DC;
@@ -16,9 +17,10 @@ body {
   height: 100px;
   background-color: #bdd3dd;
   background-image: linear-gradient(45deg, #bdd3dd, #CFD8DC);
-  position: relative;
   display: flex;
   border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
 }
 #head .logo {
   width: 440px;
@@ -96,9 +98,9 @@ body {
   margin-top: 20px;
 }
 #content .info:nth-child(1) {
-  margin-top: 200px;
+  margin-top: 220px;
 }
-#content .info:nth-child(2) {
+#content .info:nth-child(3) {
   margin-top: 50px;
 }
 #content .skills {
@@ -109,8 +111,10 @@ body {
 }
 #content .skills .skills-title {
   font-size: 45px;
+  font-weight: 600;
   padding: 0;
   text-align: center;
+  margin-bottom: 20px;
 }
 #content .skills .skills-table {
   display: flex;
@@ -122,8 +126,9 @@ body {
   margin: 0 10px 0 10px;
 }
 #content .skills .skills-table .frontEnd,
-#content .skills .skills-table .backEnd {
-  width: 400px;
+#content .skills .skills-table .backEnd,
+#content .skills .skills-table .tools {
+  width: 300px;
   height: 300px;
   background-color: royalblue;
 }
